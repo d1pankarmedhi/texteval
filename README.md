@@ -25,7 +25,7 @@ print(res)
 ```
 Output consists of Recall, Precision and F1 scores.
 
-```json
+```
 // Rouge metrics
 {
     'rouge-1': {
