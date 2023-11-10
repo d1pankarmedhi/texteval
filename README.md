@@ -1,8 +1,5 @@
 # Text Eval
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/d1pankarmedhi/StrapDown.js/graphs/commit-activity) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/d1pankarmedhi/texteval/blob/main/LICENSE.md)
-[![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
-
 
 
 
@@ -25,5 +22,28 @@ input_text = "John very much loves data science and enjoys it a lot."
 evaluator = Evaluator()
 res = evaluator.rouge_evaluation(input_text,system_summary)
 print(res)
+```
+Output consists of Recall, Precision and F1 scores.
+
+```json
+// Rouge metrics
+{
+    'rouge-1': {
+        'r': 0.8333333333333334, 
+        'p': 0.9090909090909091, 
+        'f': 0.8695652124007562,
+    }, 
+    'rouge-2': {
+        'r': 0.45454545454545453, 
+        'p': 0.5, 
+        'f': 0.47619047120181407,
+    }, 
+    'rouge-l': {
+        'r': 0.6666666666666666, 
+        'p': 0.7272727272727273, 
+        'f': 0.6956521689224953,
+    },
+}
+
 ```
 
